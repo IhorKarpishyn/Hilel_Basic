@@ -17,7 +17,3 @@ if 999 < number < 10000:
 else:
     print('Number must be four digits. Bye!')
 
-# Вариант 2
-number = input('Enter a four-digit number:')
-for i in number:
-    print(i)
