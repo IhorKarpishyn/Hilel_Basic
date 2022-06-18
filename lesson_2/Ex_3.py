@@ -8,7 +8,7 @@
 Число ВСЕГДА 4-хзначное!
 '''
 
-# Вариант 1
+
 number = int(input('Enter a four-digit number:'))
 
 if 999 < number < 10000:
