@@ -10,11 +10,11 @@
 
 
 number = int(input('Enter a four-digit number:'))
-
-if 999 < number < 10000:
-    for i in [1000, 100, 10, 1]:
-        print(number // i)
-        number %= i
-else:
-    print('Number must be four digits. Bye!')
+print(number // 1000)
+number %= 1000
+print(number // 100)
+number %= 100
+print(number // 10)
+number %= 10
+print(number)
 
