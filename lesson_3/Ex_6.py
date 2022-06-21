@@ -8,7 +8,8 @@
 '''
 
 start_list = [12, 3, 4, 10]
-if len(start_list) > 0:
+#Пустой список или список только с одним элементом должен остаться прежними
+if len(start_list) > 1:
     last_item_list = [start_list[len(start_list)-1]]
     del(start_list[len(start_list)-1])
     start_list = last_item_list + start_list
