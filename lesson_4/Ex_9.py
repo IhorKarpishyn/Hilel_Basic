@@ -15,9 +15,11 @@ final_list = []
 i = 0
 while i < random.randint(3, 10):
     start_list.append(random.randint(0, 100))
-    if i == 0 or i == 2:
-        final_list.append(start_list[i])
     i += 1
+y = 0
+for y, el in enumerate(start_list):
+    if y == 0 or y == 2:
+        final_list.append(el)
 final_list.append(start_list[len(start_list)-2])
 print('Сгенерированный список: ', start_list)
 print('Список - элементы первый, третий и второй с конца: ', final_list)
