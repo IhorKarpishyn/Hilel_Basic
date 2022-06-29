@@ -20,7 +20,7 @@ import string
 is_valid = None
 punct_valid = None
 count_ = 0
-user_string = input('Введите строку ')
+user_string = input('Введите строку : ')
 
 # получаю список пунктуации
 punct = string.punctuation
