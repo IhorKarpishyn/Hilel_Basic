@@ -19,7 +19,7 @@ user_string = input('Введите строку : ')
 tmp = user_string[:]
 for el in tmp:
     if el in string.punctuation:
-        tmp = tmp.replace(el, '')
+        tmp = tmp.replace(el, ' ')
 tmp = list(tmp.split())
 for el in tmp:
     hashtag += el.capitalize()
