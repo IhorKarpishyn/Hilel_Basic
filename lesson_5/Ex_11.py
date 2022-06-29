@@ -31,11 +31,9 @@ for el in punct:
 # проверяю есть ли в строке неразрешенные знаки пунктуации из переменной punct
 for i in user_string:
     for y in punct:
-        if i == y:
+        if i in y:
             punct_valid = False
-            break
-        else:
-            punct_valid = True
+
     # считаю в этом же цикле количество _ в строке
     if i == '_':
         count_ += 1
@@ -52,7 +50,7 @@ elif re.search(r'[0-9]', user_string[0]) is not None:
 # проверяю что знаков _ не более 1 в строке
 elif count_ > 1:
     is_valid = False
-elif not punct_valid:
+elif punct_valid is not None:
     is_valid = False
 else:
     is_valid = True
