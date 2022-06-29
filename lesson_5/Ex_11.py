@@ -33,7 +33,6 @@ for i in user_string:
     for y in punct:
         if i in y:
             punct_valid = False
-
     # считаю в этом же цикле количество _ в строке
     if i == '_':
         count_ += 1
