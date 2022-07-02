@@ -37,5 +37,4 @@ for key, value in day.items():
         if lifetime['Day'] % 10 == i:
             dni = key
 print(lifetime['Day'], '{dni},'.format(dni=dni), '{:02}'.format(lifetime['Hour']), ':',
-      '{:02}'.format(lifetime['Minute']), ':',
-      '{:02}'.format(lifetime['Second']))
+      '{:02}'.format(lifetime['Minute']), ':', '{:02}'.format(lifetime['Second']))
