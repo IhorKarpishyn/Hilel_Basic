@@ -24,18 +24,18 @@ day = {
     'дней': [0, 5, 6, 7, 8, 9]
 }
 
-final_dict = {}
+lifetime = {}
 
 day_time = (int(input("Введите число от 0 до 8639999 : ")))
 if day_time in range(0, 8640000):
     for key, value in twentyfour_hours.items():
-        final_dict[key] = (day_time // value)
-        day_time -= final_dict[key] * value
-    final_dict['Second'] = day_time
+        lifetime[key] = (day_time // value)
+        day_time -= lifetime[key] * value
+    lifetime['Second'] = day_time
 for key, value in day.items():
     for i in value:
-        if final_dict['Day'] % 10 == i:
+        if lifetime['Day'] % 10 == i:
             dni = key
-print(final_dict['Day'], '{dni},'.format(dni=dni), '{:02}'.format(final_dict['Hour']), ':',
-      '{:02}'.format(final_dict['Minute']), ':',
-      '{:02}'.format(final_dict['Second']))
+print(lifetime['Day'], '{dni},'.format(dni=dni), '{:02}'.format(lifetime['Hour']), ':',
+      '{:02}'.format(lifetime['Minute']), ':',
+      '{:02}'.format(lifetime['Second']))
