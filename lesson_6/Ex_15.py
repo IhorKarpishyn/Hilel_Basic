@@ -24,17 +24,17 @@ day = {
     'дней': [0, 5, 6, 7, 8, 9]
 }
 
-lifetime = {}
+uptime = {}
 
 day_time = (int(input("Введите число от 0 до 8639999 : ")))
 if day_time in range(0, 8640000):
     for key, value in twentyfour_hours.items():
-        lifetime[key] = (day_time // value)
-        day_time -= lifetime[key] * value
-    lifetime['Second'] = day_time
+        uptime[key] = (day_time // value)
+        day_time -= uptime[key] * value
+    uptime['Second'] = day_time
 for key, value in day.items():
     for i in value:
-        if lifetime['Day'] % 10 == i:
+        if uptime['Day'] % 10 == i:
             dni = key
-print(lifetime['Day'], '{dni},'.format(dni=dni), '{:02}'.format(lifetime['Hour']), ':',
-      '{:02}'.format(lifetime['Minute']), ':', '{:02}'.format(lifetime['Second']))
+print(uptime['Day'], '{dni},'.format(dni=dni), '{:02}'.format(uptime['Hour']), ':',
+      '{:02}'.format(uptime['Minute']), ':', '{:02}'.format(uptime['Second']))
