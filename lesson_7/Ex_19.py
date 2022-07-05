@@ -16,6 +16,7 @@ def generate(multiplicity):
         i += 1
     return new_list
 
+
 # сгенерирует два списка с разным количеством элементов
 first_list = generate(3)
 second_list = generate(5)
