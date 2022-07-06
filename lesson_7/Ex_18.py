@@ -17,7 +17,7 @@ second_index("hi", " ") is None
 def second_index(string1, string2):
     index = None
     if len(string2) > 0:
-        index = string1.find(string2,string1.find(string2)+1)
+        index = string1.find(string2, string1.find(string2)+1)
         if index == -1:
             index = None
     if index is not None:
