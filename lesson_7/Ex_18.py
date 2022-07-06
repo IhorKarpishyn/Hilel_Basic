@@ -15,20 +15,11 @@ second_index("hi", " ") is None
 
 
 def second_index(string1, string2):
-    count = 0
     index = None
-    i = 0
     if len(string2) > 0:
-        while i < len(string1):
-            if string1[i] == string2[0]:
-                count += 1
-                if count == 2:
-                    tmp_string = string1[i:i + len(string2)]
-                    if string2 == tmp_string:
-                        index = i
-                    else:
-                        count -= 1
-            i += 1
+        index = string1.find(string2,string1.find(string2)+1)
+        if index == -1:
+            index = None
     if index is not None:
         print(index)
     else:
