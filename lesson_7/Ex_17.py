@@ -17,10 +17,12 @@ def correct_sentence(work_string):
     if len(work_string) > 0:
         if work_string[len(work_string) - 1] != '.':
             work_string += '.'
-        work_string = work_string.split()
-        work_string[0] = work_string[0].capitalize()
-        for i in work_string:
-            final_string += str(i) + " "
+        if work_string[0].upper() != work_string[0]:
+            first_letter = work_string[:1]
+            first_letter = first_letter.capitalize()
+            final_string = first_letter + work_string[1:]
+        else:
+            final_string += work_string
     return final_string
 
 
