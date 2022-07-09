@@ -24,5 +24,5 @@ def add_one(work_list):
     return work_list
 
 
-numb_list = [0]
+numb_list = [9, 9, 9, 9]
 print(add_one(numb_list))
