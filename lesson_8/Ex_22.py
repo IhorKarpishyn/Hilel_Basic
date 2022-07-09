@@ -12,12 +12,9 @@ def find_unique_value(work_list):
     unique_list = []
     count = 0
     for i in unique:
-        for y in work_list:
-            if i == y:
-                count += 1
-        if count < 2:
+        count = work_list.count(i)
+        if count == 1:
             unique_list.append(i)
-        count = 0
     return unique_list
 
 
